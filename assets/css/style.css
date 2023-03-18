@@ -33,7 +33,7 @@ h1 {
     height: fit-content;
     max-width: 640px;
     margin: 16px auto;
-    background-color: #fce5948e;
+    background-color: #f7e8b5a8;
     padding: 20px;
     border: 5px solid;
 }
@@ -45,6 +45,7 @@ h1 {
 .trend {
     background-color: #ffffff83;
     border-radius: 10px;
+    text-align: center;
 }
 
 .trend-variation {
@@ -60,6 +61,7 @@ h1 {
 #trend {
     background-color: #ffffff83;
     border-radius: 10px;
+    text-align: center;
 }
 
 #trend-variation {
