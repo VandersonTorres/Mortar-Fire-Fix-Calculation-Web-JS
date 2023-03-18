@@ -29,9 +29,10 @@ h1 {
     background-image: url("https://img4.goodfon.com/wallpaper/nbig/9/fd/soldaty-minomet-obstrel.jpg");
     background-position: top;
     background-repeat: no-repeat;
+    height: fit-content;
     max-width: 640px;
     margin: 16px auto;
-    background-color: #8f824ca4;
+    background-color: #b19f59a4;
     padding: 20px;
     border: 5px solid;
 }
