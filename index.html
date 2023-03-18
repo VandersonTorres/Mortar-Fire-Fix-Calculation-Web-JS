@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computador de Tiro</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Calculadora de tiro para o Morteiro 81mm RO L-16</h1>
+
+        <div id="initial">
+            <label for="variation">Selecione a variação do lançamento:</label>
+            <button class="direction">Direção</button>
+            <button class="range">Alcance</button>
+        </div><br />
+
+        <div id="direction-variation" class="hide">
+            <form action="" class="form-dir">
+                <label for="target-distance">➡️ Insira a distância do alvo (m):</label>
+                <input type="number" class="target-distance" placeholder="Exemplo: 2000" required /><br />
+
+                <label for="launch-variation">➡️ Insira a variação do tiro (m):</label>
+                <input type="number" class="launch-variation" placeholder="Exemplo: 50" required /><br />
+
+                <label for="trend-variation">Selecione a direção da variação:</label>
+                <select name="trend-variation" class="trend-variation" required>
+                    <option value="">Selecione</option>
+                    <option value="left">Esquerda</option>
+                    <option value="right">Direita</option>
+                </select><br /><br />
+
+                <button type="submit" class="calculate-direction"> Calcular Direção </button>
+                <button type="reset" class="clean-direction"> Limpar dados de Direção </button>
+                <p id="result-dir" class="hide"></p>
+            </form>
+        </div>
+
+        <div id="range-variation" class="hide">
+            <form action="" class="form-range">
+                <label for="target-distance">➡️ Insira a distância do alvo (m):</label>
+                <input type="number" id="target-distance" placeholder="Exemplo: 2000" required /><br />
+
+                <label for="launch-variation">➡️ Insira a variação do tiro (m):</label>
+                <input type="number" id="launch-variation" placeholder="Exemplo: 50" required /><br />
+
+                <label for="trend-variation">Selecione a direção da variação:</label>
+                <select name="trend-variation" id="trend-variation" required>
+                    <option value="">Selecione</option>
+                    <option value="above">Acima</option>
+                    <option value="below">Abaixo</option>
+                </select><br /><br />
+
+                <button type="submit" class="calculate-range"> Calcular Alcance </button>
+                <button type="reset" class="clean-range"> Limpar dados de Alcance </button>
+                <p id="result-range" class="hide"></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
