@@ -15,7 +15,7 @@ body {
     background-image: url("https://img4.goodfon.com/wallpaper/nbig/9/fd/soldaty-minomet-obstrel.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-color: var(--primary-color);
     margin: 16px;
     padding: 0;
@@ -113,13 +113,6 @@ form input {
     font-size: 20px;
     height: 45px;
     padding: 0 20px;
-    border: 0;
-    outline: none;
-}
-
-form input:focus {
-    transition: 0.5s;
-    transform: scale(1.02);
     border: 0;
     outline: none;
 }
