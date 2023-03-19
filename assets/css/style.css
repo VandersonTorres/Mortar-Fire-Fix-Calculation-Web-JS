@@ -12,6 +12,10 @@
 }
 
 body {
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/9/fd/soldaty-minomet-obstrel.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--primary-color);
     margin: 16px;
     padding: 0;
@@ -27,9 +31,6 @@ h1 {
 }
 
 .container {
-    background-image: url("https://img4.goodfon.com/wallpaper/nbig/9/fd/soldaty-minomet-obstrel.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
     height: fit-content;
     max-width: 640px;
     margin: 16px auto;

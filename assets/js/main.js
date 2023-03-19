@@ -54,10 +54,12 @@ function meuEscopo() {
         const { whatDistance, whatVariation, whatTrend } = getDirection();
         if (whatDistance > 5800) {
             return alert("O alcance máximo desse Equipamento é de 5.800 metros. Ajuste a distância do alvo!");
-        } else if (whatVariation < 40) {
+        } else if (whatVariation < 40 && whatVariation >= 0) {
             return alert("O tiro está dentro do raio de ação letal de 40m da granada. Não é necessário ajuste!");
         } else if (whatDistance < 190) {
             return alert("Você não pode executar um lançamento com uma distancia menor que a zona de perigo (190m)");
+        } else if (whatVariation < 0) {
+            return alert("Insira um número maior que 'zero'.");
         };
         const milesimal = ((whatVariation * 1000) / whatDistance);
         const result = milesimal / mecDir;
@@ -79,10 +81,12 @@ function meuEscopo() {
         const { whatDistance, whatVariation, whatTrend } = getRange();
         if (whatDistance > 5800) {
             return alert("O alcance máximo desse Equipamento é de 5.800 metros. Ajuste a distância do alvo!");
-        } else if (whatVariation < 40) {
+        } else if (whatVariation < 40 && whatVariation >= 0) {
             return alert("O tiro está dentro do raio de ação letal de 40m da granada. Não é necessário ajuste!");
         } else if (whatDistance < 190) {
             return alert("Você não pode executar um lançamento com uma distancia menor que a zona de perigo (190m)");
+        } else if (whatVariation < 0) {
+            return alert("Insira um número maior que 'zero'.");
         };
         const milesimal = ((whatVariation * 1000) / whatDistance);
         const result = milesimal / mecElev;
